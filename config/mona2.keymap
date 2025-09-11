@@ -33,6 +33,21 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
+
+        mbLeft {
+            bindings = <&mkp MB1>;
+            key-positions = <17 18>;
+        };
+
+        mbRight {
+            bindings = <&mkp MB2>;
+            key-positions = <18 19>;
+        };
+
+        mbMiddle {
+            bindings = <&mkp MB3>;
+            key-positions = <17 19>;
+        };
     };
 
     macros {
@@ -115,7 +130,7 @@
 &trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_4 {
